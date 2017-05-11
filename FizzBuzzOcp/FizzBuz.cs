@@ -44,6 +44,7 @@ namespace FizzBuzzOcp
 		public FizzBuz()
 		{
 			_rules = new List<IFizzBuzzRule>();
+			_rules.Add(new BuzzRule());
 			_rules.Add(new FizzRule());
 			_rules.Add(new EchoRule());
 		}

@@ -22,7 +22,20 @@ namespace FizzBuzzOcp
 			return i.ToString();
 		}
 	}
-	
+
+	public class FizzRule : IFizzBuzzRule
+	{
+		public bool match(int i)
+		{
+			return (i%3) == 0;
+		}
+
+		public string convert(int i)
+		{
+			return "Fizz";
+		}
+	}
+
 	public class FizzBuz
 	{
 		private List<IFizzBuzzRule> _list;
@@ -31,6 +44,7 @@ namespace FizzBuzzOcp
 		public FizzBuz()
 		{
 			_list = new List<IFizzBuzzRule>();
+			_list.Add(new FizzRule());
 			_list.Add(new EchoRule());
 		}
 

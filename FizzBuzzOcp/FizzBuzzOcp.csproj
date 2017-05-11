@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="FizzBuz.cs" />
     <Compile Include="FizzBuzzShould.cs" />
+    <Compile Include="FizzRuleShould.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Choose>

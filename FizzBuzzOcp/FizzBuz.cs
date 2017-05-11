@@ -38,19 +38,19 @@ namespace FizzBuzzOcp
 
 	public class FizzBuz
 	{
-		private List<IFizzBuzzRule> _list;
+		private List<IFizzBuzzRule> _rules;
 
 
 		public FizzBuz()
 		{
-			_list = new List<IFizzBuzzRule>();
-			_list.Add(new FizzRule());
-			_list.Add(new EchoRule());
+			_rules = new List<IFizzBuzzRule>();
+			_rules.Add(new FizzRule());
+			_rules.Add(new EchoRule());
 		}
 
 		public string say(int i)
 		{
-			return _list.Where(r => r.match(i)).First().convert(i);
+			return _rules.First(r => r.match(i)).convert(i);
 		}
 	}
 }

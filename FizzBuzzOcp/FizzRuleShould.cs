@@ -14,7 +14,6 @@ namespace FizzBuzzOcp
 		}
 	}
 
-
 	[TestClass]
 	public class FizzRuleShould
 	{

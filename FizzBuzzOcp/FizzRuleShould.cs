@@ -18,7 +18,7 @@ namespace FizzBuzzOcp
 	[TestClass]
 	public class FizzRuleShould
 	{
-		ModuloRule _rule = new ModuloRule(3, "Fizz");
+		ModuloRule _rule = new ModuloRule(5, "Fizz");
 
 		[TestMethod]
 		public void convert_to_Fizz()

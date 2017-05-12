@@ -50,7 +50,6 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="BuzzRule.cs" />
     <Compile Include="FizzBuz.cs" />
     <Compile Include="FizzBuzzShould.cs" />
     <Compile Include="FizzRuleShould.cs" />

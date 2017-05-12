@@ -5,23 +5,7 @@ namespace FizzBuzzOcp
 	[TestClass]
 	public class BuzzRuleShould
 	{
-		BuzzRule _rule = new BuzzRule();
-
-		[TestMethod]
-		public void match_when_modulo_5()
-		{			
-			Assert.IsTrue(_rule.match(5));
-			Assert.IsTrue(_rule.match(10));
-			Assert.IsTrue(_rule.match(15));
-		}
-
-		[TestMethod]
-		public void not_match_when_not_modulo_5()
-		{
-			Assert.IsFalse(_rule.match(6));
-			Assert.IsFalse(_rule.match(11));
-			Assert.IsFalse(_rule.match(1));
-		}
+		ModuloRule _rule = new ModuloRule(5, "Buzz");
 
 		[TestMethod]
 		public void convert_to_Buzz()
@@ -34,24 +18,7 @@ namespace FizzBuzzOcp
 	[TestClass]
 	public class FizzRuleShould
 	{
-		private FizzRule _rule = new FizzRule();
-
-		[TestMethod]
-		public void match_when_modulo_3()
-		{
-			Assert.IsTrue(_rule.match(3));
-			Assert.IsTrue(_rule.match(9));
-			Assert.IsTrue(_rule.match(12));
-		}
-
-		[TestMethod]
-		public void not_match_when_not_modulo_3()
-		{
-			
-			Assert.IsFalse(_rule.match(1));
-			Assert.IsFalse(_rule.match(2));
-			Assert.IsFalse(_rule.match(64));
-		}
+		ModuloRule _rule = new ModuloRule(3, "Fizz");
 
 		[TestMethod]
 		public void convert_to_Fizz()

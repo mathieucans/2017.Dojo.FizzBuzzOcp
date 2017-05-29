@@ -61,8 +61,10 @@
     <Compile Include="FizzBuzzShould.cs" />
     <Compile Include="FizzRuleShould.cs" />
     <Compile Include="IFizzBuzzRule.cs" />
+    <Compile Include="ModuloBuilder.cs" />
     <Compile Include="ModuloRule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RulesBuilder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

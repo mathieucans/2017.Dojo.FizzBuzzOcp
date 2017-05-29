@@ -38,14 +38,32 @@ namespace FizzBuzzOcp
 		}
 
         [TestMethod]
+        public void say_Bang_when_modulo_7()
+        {
+            var say = new FizzBuzz();
+            Assert.AreEqual("Bang", say.say(7));
+            Assert.AreEqual("Bang", say.say(14));
+            Assert.AreEqual("Bang", say.say(28));
+        }
+
+
+        [TestMethod]
 		public void say_FizzBuzz_when_modulo_5_and_3()
 		{
 			var say = new FizzBuzz();
-			Assert.AreEqual("FizzBuzz", say.say(15));
-			Assert.AreEqual("FizzBuzz", say.say(30));
-			Assert.AreEqual("FizzBuzz", say.say(45));
+			Assert.AreEqual("FizzBuzz", say.say(15), "15");
+			Assert.AreEqual("FizzBuzz", say.say(30) , "30");
+			Assert.AreEqual("FizzBuzz", say.say(45) , "45");
 		}
 
+        public void say_FizzBang_when_modulo_7_and_3()
+        {
+            var say = new FizzBuzz();
+            Assert.AreEqual("FizzBang", say.say(21), "21");
+            Assert.AreEqual("FizzBang", say.say(42), "42");
+            Assert.AreEqual("FizzBang", say.say(63), "63");
+        }
 
-	}
+
+    }
 }

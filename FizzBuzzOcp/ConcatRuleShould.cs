@@ -1,4 +1,5 @@
-﻿using FakeItEasy;
+﻿using System.Linq;
+using FakeItEasy;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace FizzBuzzOcp
@@ -14,7 +15,7 @@ namespace FizzBuzzOcp
             {
                 A.CallTo(() => rule.match(A<int>.Ignored)).Returns(true);
             }
-            var concatRule = new ConcatRule(rules);
+            var concatRule = new ConcatRule(rules.ToArray());
 
             Assert.IsTrue(concatRule.match(1));
         }

@@ -13,15 +13,6 @@ namespace FizzBuzzOcp
 		        .Convert(5).With("Buzz")
 		        .Convert(3).With("Fizz")
 		        .AndConvertWihtEchoByDefault();
-		    /*
-                new List<IFizzBuzzRule>
-            {
-                new ConcatRule(new[] {new ModuloRule(3, "Fizz"), new ModuloRule(5, "Buzz")}),
-                new ModuloRule(5, "Buzz"),
-                new ModuloRule(3, "Fizz"),
-                new EchoRule()
-            };
-            */
 		}
 
 		public string say(int i)

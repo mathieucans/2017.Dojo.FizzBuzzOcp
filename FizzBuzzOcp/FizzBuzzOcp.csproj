@@ -54,6 +54,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="CombiniaisonExtension.cs" />
     <Compile Include="ConcatRule.cs" />
     <Compile Include="ConcatRuleShould.cs" />
     <Compile Include="EchoRule.cs" />

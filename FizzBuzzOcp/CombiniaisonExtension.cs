@@ -9,7 +9,7 @@ namespace FizzBuzzOcp
         public static IEnumerable<IEnumerable<T>> AllCombinaison<T>(this IEnumerable<T> elements)
         {
             var list = new List<IEnumerable<T>>();
-            for (int i = elements.Count() ; i >= 2; i--)
+            for (int i = elements.Count() ; i >= 1; i--)
             {
                 list.AddRange(elements.AllCombinaison(i));
             }

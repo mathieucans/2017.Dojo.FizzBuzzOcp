@@ -10,11 +10,15 @@ namespace FizzBuzzOcp
 		
 		public FizzBuzz()
 		{
-			_rules = new List<IFizzBuzzRule>();
-			_rules.Add(new ConcatRule(new [] { new ModuloRule(3, "Fizz"), new ModuloRule(5, "Buzz")}));
-			_rules.Add(new ModuloRule(5, "Buzz"));
-			_rules.Add(new ModuloRule(3, "Fizz"));	
-			_rules.Add(new EchoRule());	
+		    _rules = new List<IFizzBuzzRule>
+		    {
+		        new ConcatRule(new[] {new ModuloRule(3, "Fizz"), new ModuloRule(5, "Buzz")}),
+		        new ModuloRule(5, "Buzz"),
+		        new ModuloRule(3, "Fizz"),
+		        new EchoRule()
+		    };
+
+
 		}
 
 		public string say(int i)

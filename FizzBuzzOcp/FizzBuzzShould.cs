@@ -45,7 +45,13 @@ namespace FizzBuzzOcp
             Assert.AreEqual("Bang", say.say(14));
             Assert.AreEqual("Bang", say.say(28));
         }
-
+        [TestMethod]
+        public void MyTestMethod()
+        {
+            var say = new FizzBuzz();
+            Assert.AreEqual("Toto", say.say(11), "11");
+            Assert.AreEqual("FizzToto", say.say(33), "33");
+        }
 
         [TestMethod]
 		public void say_FizzBuzz_when_modulo_5_and_3()

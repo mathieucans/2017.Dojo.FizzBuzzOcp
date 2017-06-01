@@ -20,7 +20,7 @@
 
         public string convert(int i)
         {
-            return i % _modulo == 0 ? _convert : "";
+            return _convert;
         }
     }
 }

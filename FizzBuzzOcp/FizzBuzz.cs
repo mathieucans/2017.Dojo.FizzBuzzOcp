@@ -10,6 +10,7 @@ namespace FizzBuzzOcp
 		public FizzBuzz()
 		{
 		    _rules = new RulesBuilder()
+		        .Convert(11).With("Toto")
 		        .Convert(7).With("Bang")
 		        .Convert(5).With("Buzz")
 		        .Convert(3).With("Fizz")
